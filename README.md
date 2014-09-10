@@ -11,4 +11,7 @@ cause my eyes to tire a lot more (I must be rare).
 
 It looks decent enough on terminal Emacs.
 
+This is published on the MELPA repository so if you have it there is no need
+to add it manually.
+
 ![IMAGE](http://i.imgur.com/AoG0YrK.png)
