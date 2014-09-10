@@ -11,5 +11,4 @@ cause my eyes to tire a lot more (I must be rare).
 
 It looks decent enough on terminal Emacs.
 
-![Professional Emacs Theme](http://imgur.com/AoG0YrK)
-
+[Imgur](http://i.imgur.com/AoG0YrK.png)
