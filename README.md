@@ -11,4 +11,4 @@ cause my eyes to tire a lot more (I must be rare).
 
 It looks decent enough on terminal Emacs.
 
-[Imgur](http://i.imgur.com/AoG0YrK.png)
+![IMAGE](http://i.imgur.com/AoG0YrK.png)
