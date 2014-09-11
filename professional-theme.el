@@ -35,12 +35,12 @@
 ;;; Code:
 (deftheme professional "port of Vim's professional theme")
 
-(let* ((pro/bgyellow "#FFFFDD") 
-       (pro/fg "#000000") 
-       (pro/blood "#993300") 
-       (pro/blue "#0000C8") 
-       (pro/lightblue "#5180B3") 
-       (pro/darkgreen "#006600") 
+(let* ((pro/bgyellow "#FFFFDD")
+       (pro/fg "#000000")
+       (pro/blood "#993300")
+       (pro/blue "#0000C8")
+       (pro/lightblue "#5180B3")
+       (pro/darkgreen "#006600")
        (pro/darkred "#660000")
        (pro/darkpurple "#6600FF")
        (pro/green "#339900")
@@ -55,6 +55,8 @@
        (pro/white "#FFFFFF")
        (pro/brightred "#FF0000")
        (pro/darkgray "#757575")
+       (pro/mediumgray "#C0C0C0")
+       (pro/lightgray "#E8E8E8") 
        (pro/brightyellow "#FFFF00"))
 
 
@@ -78,12 +80,13 @@
    `(font-lock-doc-face			((t (:foreground ,pro/olivegreen))))
 
    ;; mode line
-   ;; `(mode-line-inactive ((t (:background ,ample/region-dark :foreground ,ample/bg))))
-   ;; `(mode-line		((t (:background ,ample/region :foreground ,ample/fg))))
    `(linum ((t (:background ,pro/pastelgreen :foreground ,pro/bgyellow))))
-   ;; `(popup-tip-face ((t (:background ,ample/region-dark :foreground ,ample/dark-tan))))
-   ;; `(header-line ((t (:background ,ample/fg :foreground ,ample/bg))))
-   ;; `(button  ((t (:foreground ,ample/lighter-blue :background nil :underline t))))
+
+   ;; hl-line
+   `(hl-line ((t (:background ,pro/lightgray))))
+
+   ;; indent-guide-face
+   `(indent-guide-face ((t (:foreground ,pro/mediumgray))))
 
    ;; powerline
    `(powerline-active1          ((t (:foreground ,pro/bgyellow :background ,pro/fg))))
@@ -97,20 +100,9 @@
    `(isearch		((t (:foreground ,pro/fg :background ,pro/brightyellow))))
    `(lazy-highlight	((t (:foreground ,pro/fg :background ,pro/orange))))
 
-   ;; ace-jump
-   ;; `(ace-jump-face-background ((t (:inherit font-lock-comment-face :background nil))))
-   ;; `(ace-jump-face-foreground ((t (:foreground ,ample/purple :bold t :background nil))))
-   ;; `(vertical-border ((t (:background ,ample/darker-gray :foreground ,ample/darkest-gray))))
-   ;; `(hl-line ((t (:background ,ample/region-light))))
-   ;; `(highlight-indentation-face ((t (:background ,ample/darkest-gray))))
-
-   ;; mini buff
-   ;; `(minibuffer-prompt ((t (:foreground ,ample/purple :bold t :background nil))))
-
    `(compilation-error		((t (:foreground ,pro/brightred :bold t))))
    `(compilation-warning	((t (:foreground ,pro/orange :bold t))))
    `(compilation-info		((t (:foreground ,pro/green :bold t))))
-
 
    ;;show paren
    `(show-paren-match ((t (:foreground nil :background ,pro/blue))))
@@ -123,9 +115,8 @@
    ;; helm
    `(helm-M-x-key			((t (:foreground ,pro/orange :underline nil))))
    `(helm-header			((t (:foreground ,pro/bgyellow :background ,pro/fg))))
-
-   ;; company
    `(company-preview-common             ((t (:inherit font-lock-comment-face))))
+
 
    ;; trailing whitespace
    `(trailing-whitespace ((t (:background "white" :bold t)))))
