@@ -4,7 +4,8 @@
 ;; Description: Emacs port of Vim's professional theme
 ;; Author: Juanjo Alvarez <juanjo@juanjoalvarez.net>
 ;; Created: Thu Sep 10 01:04:58 2013 (-0400)
-;; Version: 0.0.1
+;; Version: 20140911.222
+;; X-Original-Version: 0.0.1
 ;; URL: https://github.com/juanjux/professional-theme
 ;; Keywords: theme, light, professional
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -35,9 +36,9 @@
 ;;; Code:
 (deftheme professional "port of Vim's professional theme")
 
-(let* ((pro/bgyellow "#FFFFDD")
+(let* ((pro/bgyellow "#FFFFDD") 
        (pro/fg "#000000")
-       (pro/blood "#993300")
+       (pro/blood "#993300") 
        (pro/blue "#0000C8")
        (pro/lightblue "#5180B3")
        (pro/darkgreen "#006600")
@@ -64,7 +65,7 @@
   (custom-theme-set-faces
    `professional
    `(default ((t (:foreground ,pro/fg :background ,pro/bgyellow))))
-   `(cursor  ((t (:foreground ,pro/bgyellow :background ,pro/blue))))
+   `(cursor  ((t (:foreground ,pro/bgyellow :background ,pro/pastelgreen))))
    `(region  ((t (:background "grey"))))
    `(font-lock-builtin-face		((t (:foreground ,pro/blue))))
    `(font-lock-comment-face		((t (:foreground ,pro/lightblue))))
@@ -73,7 +74,7 @@
    `(font-lock-keyword-face		((t (:foreground ,pro/blue))))
    `(font-lock-string-face		((t (:foreground ,pro/darkgreen))))
    `(font-lock-preprocessor-face	((t (:foreground ,pro/blood))))
-   `(font-lock-type-face		((t (:foreground ,pro/purple))))
+   `(font-lock-type-face		((t (:foreground ,pro/darkred))))
    `(font-lock-constant-face		((t (:foreground ,pro/purple))))
    `(font-lock-warning-face		((t (:foreground "red" :bold t))))
    `(font-lock-variable-name-face	((t (:foreground ,pro/fg))))
@@ -105,7 +106,7 @@
    `(compilation-info		((t (:foreground ,pro/green :bold t))))
 
    ;;show paren
-   `(show-paren-match ((t (:foreground nil :background ,pro/blue))))
+   `(show-paren-match ((t (:foreground ,pro/fg :background ,pro/darkgray))))
    `(show-paren-mismatch ((t (:inherit error))))
 
    ;; error
