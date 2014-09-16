@@ -4,8 +4,8 @@
 ;; Description: Emacs port of Vim's professional theme
 ;; Author: Juanjo Alvarez <juanjo@juanjoalvarez.net>
 ;; Created: Thu Sep 10 01:04:58 2013 (-0400)
-;; Version: 20140911.222
-;; X-Original-Version: 0.0.1
+;; Version: 20140914.1533
+;; X-Original-Version: 0.0.3
 ;; URL: https://github.com/juanjux/professional-theme
 ;; Keywords: theme, light, professional
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -108,6 +108,9 @@
    ;;show paren
    `(show-paren-match ((t (:foreground ,pro/fg :background ,pro/darkgray))))
    `(show-paren-mismatch ((t (:inherit error))))
+
+   ;; elscreen
+   `(elscreen-tab-other-screen-face ((t (:foreground ,pro/bgyellow :background ,pro/pastelgreen))))
 
    ;; error
    `(error ((t (:foreground "red"))))
