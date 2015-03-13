@@ -6,7 +6,7 @@
 ;; Created: Thu Sep 10 01:04:58 2013 (-0400)
 ;; Version: 20140914.1533
 ;; X-Original-Version: 0.0.3
-;; URL: https://github.com/juanjux/professional-theme
+;; URL: https://github.com/juanjux/emacs-professional-theme
 ;; Keywords: theme, light, professional
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
